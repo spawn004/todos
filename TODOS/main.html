@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="libraries/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container-main">
+        <div class="header-main">todos</div>
+        <div class="container-field">
+            <div class="task-input">
+              <div class="dropdownBtn">
+                <label for="checkAll" class="dropdown-button">
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </label>
+                <input type="checkbox" class="dropdown-checkbox" id="checkAll">
+                </div>
+                <div class="header-form">
+                    <input class="list-heading" placeholder="What needs to be done?"></input>
+                </div>
+            </div>
+            <div id="tasksContainer"></div>
+            <div class="form-footer">
+                <div class="remaining-items"></div>
+                <div class="footer-nav">
+                    <nav class="filters">
+                        <button id="allBtn" class="filter-button active" href="">All</button>
+                        <button id="activeBtn" class="filter-button" href="">Active</button>
+                        <button id="completedBtn" class="filter-button" href="">Completed</button>
+                    </nav>
+                </div>
+                <div class="clear-completed">
+                    <button>Clear completed</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="js/helper.js"></script> -->
+    <script src="js/functions.js"></script>
+</body>
+
+</html>
